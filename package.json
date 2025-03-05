@@ -1,0 +1,44 @@
+{
+  "name": "mcp-setup",
+  "version": "1.0.0",
+  "description": "Model Context Protocol integration for Claude Desktop",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "bash ./scripts/server/run-all-servers.sh",
+    "stop": "bash ./scripts/server/stop-all-servers.sh",
+    "status": "bash ./scripts/server/check-status.sh",
+    "test": "bash ./scripts/server/test-mcp.sh",
+    "setup": "bash ./setup-mcp.sh",
+    "validate": "bash ./validate-dependencies.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "^1.0.0",
+    "@modelcontextprotocol/server-brave-search": "^1.0.0",
+    "@modelcontextprotocol/server-memory": "^1.0.0",
+    "@modelcontextprotocol/server-puppeteer": "^1.0.0",
+    "@modelcontextprotocol/server-github": "^1.0.0",
+    "@modelcontextprotocol/server-sequential-thinking": "^1.0.0",
+    "@smithery/cli": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/mcp-setup.git"
+  },
+  "keywords": [
+    "claude",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "integration"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
